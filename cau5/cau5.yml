@@ -1,6 +1,6 @@
 ---
 - name: Configure R1
-  hosts: R1
+  hosts: thiennv_lab_cau5_R1
   gather_facts: no
 
   tasks:
@@ -26,7 +26,7 @@
         mask: 255.255.255.0
         next_hop: 192.168.12.2
 - name: Configure R2
-  hosts: R2
+  hosts: thiennv_lab_cau5_R2
   gather_facts: no
 
   tasks:
