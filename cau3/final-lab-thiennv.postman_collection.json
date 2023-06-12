@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "852a5ede-ff80-4980-a1e0-b3eaa4069849",
+		"name": "final-lab-thiennv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27033632"
+	},
+	"item": [
+		{
+			"name": "authen",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "j_username",
+							"value": "{{username}}",
+							"type": "text"
+						},
+						{
+							"key": "j_password",
+							"value": "{{password}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{vmanage}}/j_security_check",
+					"host": [
+						"{{vmanage}}"
+					],
+					"path": [
+						"j_security_check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get device",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{vmanage}}/dataservice/device",
+					"host": [
+						"{{vmanage}}"
+					],
+					"path": [
+						"dataservice",
+						"device"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
