@@ -1,0 +1,34 @@
+VPCS> show ip                                               
+
+NAME        : VPCS[1]
+IP/MASK     : 172.21.141.10/24
+GATEWAY     : 172.21.141.1
+DNS         : 
+MAC         : 00:50:79:66:68:07
+LPORT       : 20000
+RHOST:PORT  : 127.0.0.1:30000
+MTU         : 1500
+
+VPCS> ping 172.21.140.10
+
+84 bytes from 172.21.140.10 icmp_seq=1 ttl=62 time=21.442 ms
+84 bytes from 172.21.140.10 icmp_seq=2 ttl=62 time=14.040 ms
+84 bytes from 172.21.140.10 icmp_seq=3 ttl=62 time=14.601 ms
+84 bytes from 172.21.140.10 icmp_seq=4 ttl=62 time=16.521 ms
+84 bytes from 172.21.140.10 icmp_seq=5 ttl=62 time=13.713 ms
+
+VPCS> ping 172.21.140.20
+
+84 bytes from 172.21.140.20 icmp_seq=1 ttl=62 time=19.710 ms
+84 bytes from 172.21.140.20 icmp_seq=2 ttl=62 time=13.585 ms
+84 bytes from 172.21.140.20 icmp_seq=3 ttl=62 time=12.966 ms
+84 bytes from 172.21.140.20 icmp_seq=4 ttl=62 time=16.541 ms
+84 bytes from 172.21.140.20 icmp_seq=5 ttl=62 time=13.403 ms
+
+VPCS> ping 172.21.141.20
+
+84 bytes from 172.21.141.20 icmp_seq=1 ttl=64 time=12.423 ms
+84 bytes from 172.21.141.20 icmp_seq=2 ttl=64 time=16.331 ms
+84 bytes from 172.21.141.20 icmp_seq=3 ttl=64 time=12.903 ms
+84 bytes from 172.21.141.20 icmp_seq=4 ttl=64 time=15.001 ms
+84 bytes from 172.21.141.20 icmp_seq=5 ttl=64 time=14.038 ms
